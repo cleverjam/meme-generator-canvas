@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+footer {
+  width: 500px;
+}
+input {
+  width: 49.6%;
+}
