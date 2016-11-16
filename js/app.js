@@ -58,7 +58,9 @@ function fileSelectHandler(E){
     var image = new Image();
     image.onload=function() {
       window.imageSrc = this;
-      redraw(window.imageSrc, null, null);
+        c.height = this.height;
+        c.width = this.width;
+        redraw(window.imageSrc, null, null);
     }
 
     image.src = data;
