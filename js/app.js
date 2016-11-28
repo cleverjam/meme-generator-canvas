@@ -1,14 +1,12 @@
 var c = document.querySelector("#c");
-var ctx = c.getContext("2d"); //The context within this canvas we will draw to
-
 
 function redraw(image, top, bottom){
   var c = document.querySelector("#c");
   var ctx = c.getContext("2d");
   ctx.strokeStyle="black";
-  ctx.fillStyle="white"
+  ctx.fillStyle="white";
   ctx.textAlign ="center";
-  ctx.font = "36pt impact"
+  ctx.font = "36pt impact";
   ctx.lineWidth = 3;  //stroke thickness!!
   ctx.drawImage(image,0,0,c.width,c.height);
   if (top != null) {
@@ -61,11 +59,11 @@ function fileSelectHandler(E){
         c.height = this.height;
         c.width = this.width;
         redraw(window.imageSrc, null, null);
-    }
+    };
 
     image.src = data;
 
-  }
+  };
   reader.readAsDataURL(file);
 }
 
