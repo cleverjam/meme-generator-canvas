@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Canvases</title>
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
-  <canvas id="c"></canvas>
-      <input type="text" id="top-line" placeholder="Top line">
-      <input type="text" id="bottom-line" placeholder="Bottom line" />
-      <input type="file" id="file" />
-      <button id="saveBtn">Save Meme</button>
-    <script src="js/app.js"></script>
-  </body>
+    <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+<header>
+    <h1>Amazing Memes</h1>
+</header>
+<canvas id="c"></canvas>
+<div class="options">
+    <input type="text" id="top-line" placeholder="Top line">
+    <input type="text" id="bottom-line" placeholder="Bottom line"/>
+    <input type="file" id="file"/>
+    <button id="saveBtn" disabled>Save Meme</button>
+</div>
+<script src="js/app.js"></script>
+</body>
 </html>
