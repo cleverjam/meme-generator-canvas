@@ -20,18 +20,7 @@ function redraw(image, top, bottom){
   }
 }
 
-//
-// var image = new Image();
-// image.onload = function() {
-//   // console.log("Loaded image");
-//   ctx.drawImage(image,0,0,c.width,c.height);
-//   savedImage = c.toDataURL();
-//   // window.open(savedImage)
-//   window.imageSrc = this;
-//   redraw(window.imageSrc, null, null)
-//
-// }
-// image.src = "images/nerd.jpg"
+
 
 
 function textChanged(E){
@@ -58,6 +47,7 @@ function fileSelectHandler(E){
       window.imageSrc = this;
         c.height = this.height;
         c.width = this.width;
+        document.getElementById('saveBtn').disabled = false;
         redraw(window.imageSrc, null, null);
     };
 
