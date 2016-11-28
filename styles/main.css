@@ -1,9 +1,24 @@
 * {
   box-sizing: border-box;
 }
-footer {
-  width: 500px;
+body {
+  max-width:1200px;
+  margin:0 auto;
 }
-input {
-  width: 49.6%;
+
+.options input, .options button {
+  width:100%;
+  margin:1em;
+
+}
+
+.options input:last-of-type {
+  width: 49%;
+}
+.options button {
+  font-size:1em;
+}
+canvas {
+  display: inline-block;
+  width:100%;
 }
